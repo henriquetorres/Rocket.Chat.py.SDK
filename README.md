@@ -20,7 +20,21 @@ Say hello and the bot will answer you.
 
 ## Overview
 
-This is a python SDK to make the access to Rocket.Chat easier.
+This is a python SDK to make the access to Rocket.Chat easier, this package it's published [here](https://pypi.org/project/rocketchat-py-sdk/).
+
+The main class of this package is the class `Driver`, to see it run in your terminal:
+
+```python
+$ python
+
+>>> import rocketchat_py_sdk.driver as driver
+
+>>> help(driver)
+
+>>> bot = driver.Driver(url='localhost:3000', ssl=False)
+
+>>> bot.connect()
+```
 
 ## Docs
 
